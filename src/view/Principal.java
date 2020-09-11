@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Color;
 import java.awt.Event;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -13,19 +14,20 @@ import org.omg.CORBA.OMGVMCID;
 
 import control.Sistema;
 
-public class JanelaPrincipal extends Janela implements ActionListener{
+public class Principal extends Janela implements ActionListener{
 	
 	private JButton botaoCalculoPotencia;
 	private JButton botaoCalcularRaizNumero;
 	private JButton botaoCalcularRaizEquacao;
 	
-	public JanelaPrincipal() {
+	public Principal() {
 		botaoCalculoPotencia = new JButton("Calcular Potencia");
 		botaoCalcularRaizNumero = new JButton("Calcular Raiz de Numero");
 		botaoCalcularRaizEquacao = new JButton("Calcular Raiz(es) de Equação");
 		botaoCalculoPotencia.addActionListener(this);
 		botaoCalcularRaizNumero.addActionListener(this);
 		botaoCalcularRaizEquacao.addActionListener(this);
+		botaoCalcularRaizEquacao.setBackground(Color.gray);
 		this.getContentPane().add(botaoCalculoPotencia);
 		this.getContentPane().add(botaoCalcularRaizNumero);
 		this.getContentPane().add(botaoCalcularRaizEquacao);
@@ -35,7 +37,7 @@ public class JanelaPrincipal extends Janela implements ActionListener{
 	}
 
 	public static void main(String[] args) {
-		new JanelaPrincipal();
+		new Principal();
 	}
 
 	@Override
