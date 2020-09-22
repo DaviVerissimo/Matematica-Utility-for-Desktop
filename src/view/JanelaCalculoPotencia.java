@@ -25,7 +25,7 @@ public class JanelaCalculoPotencia extends Janela implements ActionListener{
 	private JTextField jt_expoente;
 	private JPanel painel2;
 	private Sistema sistema;
-	private float potencia;
+	private long potencia;
 	
 	public JanelaCalculoPotencia(Sistema sistema) {
 		this.sistema = sistema;

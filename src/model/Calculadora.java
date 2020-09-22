@@ -1,17 +1,16 @@
 package model;
 
-import java.util.Scanner;
-
 public class Calculadora {
 	
-	public float calcularRaiz(float numero, float baseRaiz) {
-		float raiz = (float) Math.pow(numero, 1 / baseRaiz);
+	public long calcularRaiz(float numero, float baseRaiz) {
+		long raiz = (long) Math.pow(numero, 1 / baseRaiz);
 		return raiz;
 	}
 	
-	public float calcularPotentia(float numero, float basePotencia) {
-		float potencia = (float) Math.pow(numero, basePotencia);
+	public long calcularPotentia(double numero, double basePotencia) {
+		Double potenciacao = Math.pow(numero, basePotencia);
+		long potencia = potenciacao.longValue();
 		return potencia;
 	}
-
+	
 }

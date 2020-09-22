@@ -7,19 +7,19 @@ import model.NaoExistemRaizesReaisException;
 public class Sistema implements Facada{
 
 	@Override
-	public float calcularRaiz(float numero, float baseRaiz) {
+	public long calcularRaiz(float numero, float baseRaiz) {
 		
 		return new Calculadora().calcularRaiz(numero, baseRaiz);
 	}
 
 	@Override
-	public float calcularPotencia(float numero, float basePotencia) {
+	public long calcularPotencia(float numero, float basePotencia) {
 		
 		return new Calculadora().calcularPotentia(numero, basePotencia);
 	}
 
 	@Override
-	public float[] calcularRaizEquacao(float a, float b, float c) {
+	public double[] calcularRaizEquacao(float a, float b, float c) {
 		Formulas formulas = new Formulas();
 		if (validarRaizes(a, b, c) ){
 			try {

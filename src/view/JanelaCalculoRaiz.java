@@ -21,7 +21,7 @@ public class JanelaCalculoRaiz extends Janela implements ActionListener{
 	private JTextField jt_expoente;
 	private JPanel painel2;
 	private Sistema sistema;
-	private float raiz;
+	private double raiz;
 	
 	public JanelaCalculoRaiz(Sistema sistema) {
 		this.sistema = sistema;

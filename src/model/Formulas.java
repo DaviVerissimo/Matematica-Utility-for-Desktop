@@ -2,18 +2,17 @@ package model;
 
 public class Formulas {
 	
-	public float calcularDelta(float a, float b, float c) {
-		float delta = new Calculadora().calcularPotentia(b, 2)-(4 * a * c);
+	public double calcularDelta(double a, double b, double c) {
+		double delta = new Calculadora().calcularPotentia(b, 2)-(4 * a * c);
 		return delta;
 	}
 	
-	
-	public float[] calcularRaizEqaucao2GrauComBaskara (float a, float b, float c) 
+	public double[] calcularRaizEqaucao2GrauComBaskara (double a, double b, double c) 
 			throws NaoExistemRaizesReaisException {
-		float[] raizes = new float[2];
-		float delta = this.calcularDelta(a, b, c);
-		float raiz1 = (float) ((-1 * b + (Math.sqrt(delta)))) / 2 * a;
-		float raiz2 = (float) ((-1 * b - (Math.sqrt(delta)))) / 2 * a;
+		double[] raizes = new double[2];
+		double delta = this.calcularDelta(a, b, c);
+		double raiz1 =  ((-1 * b + (Math.sqrt(delta)))) / 2 * a;
+		double raiz2 =   ((-1 * b - (Math.sqrt(delta)))) / 2 * a;
 		if (delta == 0) {
 			raizes[0] = raiz1;
 		}
