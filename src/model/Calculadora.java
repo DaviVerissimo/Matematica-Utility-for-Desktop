@@ -13,4 +13,13 @@ public class Calculadora {
 		return potencia;
 	}
 	
+	public float calcularPorcentagem(float cemPorCentoero, float porcento) {
+		float porcentagem = (cemPorCentoero * porcento) / 100;
+		return porcentagem;
+	}
+	
+	public float calcularParcelaCorrespodenteEmPorcetagem(float cemPorCentoero, float valor) {
+		float porcetagemCorrespodente = (cemPorCentoero * 100) / valor;
+		return porcetagemCorrespodente;
+	}
 }

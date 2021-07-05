@@ -53,7 +53,7 @@ public class JanelaCalculoPotencia extends Janela implements ActionListener{
 		this.getContentPane().add(painel1);
 		//painel2 = new JPanel();
 		//this.getContentPane().add(painel2);
-		this.repaint();
+		//this.repaint();
 	}
 
 	@Override

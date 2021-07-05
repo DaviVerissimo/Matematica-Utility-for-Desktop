@@ -31,4 +31,18 @@ public interface Facada {
 	 * @return a retorna se a equação tem raizes validas.
 	 */
 	public boolean validarRaizes(float a, float b, float c);
+	
+	/**Retorna o valor correspodente a porcetagem. 
+	 * @param numero Numero que representa a totalidade (100%).
+	 * @param porcento Valor da porcentagem.
+	 * @return valor da porcetagem
+	 */
+	public float calcularPorcentagem(float numero, float porcento);
+	
+	/**Retorna a porcetagem correspodente ha um valor.
+	 * @param numero Numero que representa a totalidade (100%).
+	 * @param valor Valor que deserja descobrir ha quantos porcento equivale.
+	 * @return porcentagem
+	 */
+	public float calcularQuantosPorcentoDoNumero(float numero, float valor);
 }

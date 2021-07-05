@@ -45,4 +45,16 @@ public class Sistema implements Facada{
 		return true;
 	}
 
+	@Override
+	public float calcularPorcentagem(float numero, float porcento) {
+		
+		return new Calculadora().calcularPorcentagem(numero, porcento);
+	}
+
+	@Override
+	public float calcularQuantosPorcentoDoNumero(float numero, float valor) {
+		
+		return new Calculadora().calcularParcelaCorrespodenteEmPorcetagem(numero, valor);
+	}
+
 }

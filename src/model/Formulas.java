@@ -4,7 +4,7 @@ public class Formulas {
 	
 	public double calcularDelta(double a, double b, double c) {
 		double delta = new Calculadora().calcularPotentia(b, 2)-(4 * a * c);
-		return delta; 
+		return delta;
 	}
 	
 	public double[] calcularRaizEqaucao2GrauComBaskara (double a, double b, double c) 
