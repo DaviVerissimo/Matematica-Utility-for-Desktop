@@ -23,7 +23,7 @@ public class Sistema implements Facada{
 		Formulas formulas = new Formulas();
 		if (validarRaizes(a, b, c) ){
 			try {
-				return formulas.calcularRaizEqaucao2GrauComBaskara(a, b, c);
+				return formulas.calcularRaizEquacao2GrauComBaskara(a, b, c);
 			} catch (NaoExistemRaizesReaisException e) {
 				
 				e.printStackTrace();
@@ -37,7 +37,7 @@ public class Sistema implements Facada{
 	public boolean validarRaizes(float a, float b, float c) {
 		Formulas formulas = new Formulas();
 		try {
-			formulas.calcularRaizEqaucao2GrauComBaskara(a, b, c);
+			formulas.calcularRaizEquacao2GrauComBaskara(a, b, c);
 		} catch (NaoExistemRaizesReaisException e) {
 			return false;
 		}

@@ -18,8 +18,9 @@ public class Calculadora {
 		return porcentagem;
 	}
 	
-	public float calcularParcelaCorrespodenteEmPorcetagem(float cemPorCentoero, float valor) {
-		float porcetagemCorrespodente = (cemPorCentoero * 100) / valor;
+	public float calcularParcelaCorrespodenteEmPorcetagem(float cemPorCento, float valor) {
+		float aux = (float) (valor * 100);
+		float porcetagemCorrespodente = aux / cemPorCento;
 		return porcetagemCorrespodente;
 	}
 }

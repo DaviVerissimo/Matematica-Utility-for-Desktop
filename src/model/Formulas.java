@@ -7,7 +7,7 @@ public class Formulas {
 		return delta;
 	}
 	
-	public double[] calcularRaizEqaucao2GrauComBaskara (double a, double b, double c) 
+	public double[] calcularRaizEquacao2GrauComBaskara (double a, double b, double c) 
 			throws NaoExistemRaizesReaisException {
 		double[] raizes = new double[2];
 		double delta = this.calcularDelta(a, b, c);

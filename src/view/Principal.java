@@ -22,22 +22,26 @@ public class Principal extends Janela implements ActionListener{
 	private JButton botaoCalcularRaizNumero;
 	private JButton botaoCalcularRaizEquacao;
 	private JButton botaoCalcularPorcetagem;
+	private JButton botaoPorcetagemEquivalente;
 	
 	public Principal() {
 		botaoCalculoPotencia = new JButton("Calcular Potencia");
 		botaoCalcularRaizNumero = new JButton("Calcular Raiz de Numero");
 		botaoCalcularRaizEquacao = new JButton("Calcular Raiz(es) de Equação");
-		botaoCalcularPorcetagem = new JButton("Carcular Porcetagem");
+		botaoCalcularPorcetagem = new JButton("Calcular Porcetagem");
+		botaoPorcetagemEquivalente = new JButton("Calcular Quantos Porcento equivale");
 		botaoCalculoPotencia.addActionListener(this);
 		botaoCalcularRaizNumero.addActionListener(this);
 		botaoCalcularRaizEquacao.addActionListener(this);
 		botaoCalcularRaizEquacao.setBackground(Color.gray);
 		botaoCalcularPorcetagem.addActionListener(this);
+		botaoPorcetagemEquivalente.addActionListener(this);
 		this.getContentPane().add(botaoCalculoPotencia);
 		this.getContentPane().add(botaoCalcularRaizNumero);
 		this.getContentPane().add(botaoCalcularRaizEquacao);
 		this.getContentPane().add(botaoCalcularPorcetagem);
-		this.setLayout(new GridLayout(4,1,4,5));
+		this.getContentPane().add(botaoPorcetagemEquivalente);
+		this.setLayout(new GridLayout(5,1,4,5));
 		this.setTitle("Matemática Utility");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 	}
@@ -63,6 +67,9 @@ public class Principal extends Janela implements ActionListener{
 		
 		if (e.getSource() == botaoCalcularPorcetagem) {
 			new JanelaCalculoPorcentagem(sistema);
+		}
+		if (e.getSource() == botaoPorcetagemEquivalente) {
+			new JanelaPorcentagemEquivalente(sistema);
 		}
 	}
 }
