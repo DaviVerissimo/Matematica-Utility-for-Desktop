@@ -4,10 +4,10 @@ public class Formulas {
 	
 	public double calcularDelta(double a, double b, double c) {
 		double delta = new Calculadora().calcularPotentia(b, 2)-(4 * a * c);
-		return delta; 
+		return delta;
 	}
 	
-	public double[] calcularRaizEqaucao2GrauComBaskara (double a, double b, double c) 
+	public double[] calcularRaizEquacao2GrauComBaskara (double a, double b, double c) 
 			throws NaoExistemRaizesReaisException {
 		double[] raizes = new double[2];
 		double delta = this.calcularDelta(a, b, c);
