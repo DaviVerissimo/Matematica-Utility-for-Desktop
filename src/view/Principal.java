@@ -42,7 +42,7 @@ public class Principal extends Janela implements ActionListener{
 		this.getContentPane().add(botaoCalcularPorcetagem);
 		this.getContentPane().add(botaoPorcetagemEquivalente);
 		this.setLayout(new GridLayout(5,1,4,5));
-		this.setTitle("Matemática Utility");
+		this.setTitle("Matemática Utility for Desktop");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
 	}
 
